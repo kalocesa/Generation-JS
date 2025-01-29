@@ -110,3 +110,83 @@ sintaxis:
 //Realizar una función declarada que calcule el área de un rectángulo
 const rectangleArea = (height, width) => height * width;
 console.log(`El área del rectangulo es ${rectangleArea(10, 6)} cm2`);
+
+/*
+ ------------ Parámetros por defecto -----------------------
+             (default parameters)
+Inicializa un parámetro de la función, si no se envía el argumento cuando se invoca
+*/
+
+const grettingsPeople = (name) => `Hi ${name}, welcome!`;
+console.log(grettingsPeople());
+console.log(grettingsPeople("Kati"));
+
+const grettingsPeopleDefault = (name = "Guest") => `Hi ${name}, welcome!`;
+console.log(grettingsPeopleDefault());
+console.log(grettingsPeopleDefault("Kati"));
+
+//Realizar una function que tenga de parámetros el nombre y cohorte
+//Los valores por default de los parámetros son nombre = participante y cohorte = cohorte Generation
+
+const greetingGeneration = (
+  name = "participante",
+  cohorte = "Cohorte de Generation"
+) => console.log(`Hola ${name}, bienvenido/a a la ${cohorte}`);
+
+greetingGeneration();
+greetingGeneration("Kati", "Cohorte 50");
+
+console.log(parseInt("faba")); // NaN
+console.log(parseInt("faba", 10)); // NaN
+
+// base decimal(10 dígitos): 0,1,2,3,4,5,6,7,8,9
+// base hexadecimal(16 dígitos): 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+// base octal(8 dígitos): 0,1,2,3,4,5,6,7
+// base binaria(2 dígitos): 0,1
+console.log(parseInt("faba", 16)); // NaN
+
+/*
+ ------------ Funciones de Callback -----------------------
+ Es una función(definida, expresada, arrow, anónima) que se pasa 
+ a otra función como argumento.
+ Se pasa en el argumento como referencia ( sin parentesis).
+ */
+
+//Arrow function que reciba un parámetro y lo imprima en la consola
+//Arrow function que reciba un parámetro y lo imprima con alert
+
+//listaSuper("leche");
+
+//const superLista = (comida) => alert(`Hoy necesito ${comida}, del Walmart`);
+//superLista("harina");
+
+/**
+ * Funcion que imprima en consola o alert un mensaje
+ * El parámetro mensaje = mensaje a imprimir;
+ * el parámetro opcion = "consola" o "alert" el destino a imprimit
+ */
+const mensajeConsola = (mensaje) => console.log(mensaje);
+//const mensajeAlerta = (mensaje) => alert(mensaje);
+const mensajeTítulo = (mensaje) =>
+  (document.getElementById("title").innerText = mensaje);
+
+const mensajeDificil = (mensaje, opcion) => {
+  if (opcion === "consola") {
+    return mensajeConsola(mensaje);
+  } else if (opcion === "alerta") {
+    return mensajeAlerta(mensaje);
+  } else if (opcion === "titulo") {
+    mensajeTítulo(mensaje);
+  }
+};
+
+mensajeDificil("Sí se pudo!", "consola");
+//mensajeDificil("Sí se pudo!", "alerta");
+mensajeDificil("Holiii", "titulo");
+
+//Usar función de callback del ejercicio anterior
+
+const mensajeDificilConCallback = (mensaje, callback) => callback(mensaje);
+mensajeDificilConCallback("Hola Erick", mensajeConsola); //console.log
+mensajeDificilConCallback("Hola Erick", mensajeTítulo); //innertext
+mensajeDificilConCallback("Hola Erick", 589); //Error porque no es una funciòn
