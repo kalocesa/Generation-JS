@@ -215,3 +215,61 @@ console.log(mayoriaDeEdad(15));
  mes  9, 10, 11 = otoño 
  Realizar una versión con if-else-elseif y otra con switch.
 */
+
+const seasonsOfTheYear = () => {
+  const mes = prompt(
+    "Introduce el número del mes que nos encontramos actualmente para conocer la estación del año"
+  );
+  if (mes == 12 || mes == 1 || mes == 2) {
+    alert("Es invierno");
+  } else if (mes == 3 || mes == 4 || mes == 5) {
+    alert("Es primavera");
+  } else if (mes == 6 || mes == 7 || mes == 8) {
+    alert("Es verano");
+  } else if (mes == 9 || mes == 10 || mes == 11) {
+    alert("Es otoño");
+  } else {
+    alert("Por favor escribe un mes de año del 1 al 12");
+  }
+};
+
+seasonsOfTheYear();
+
+const seasonsOfTheYearSwitch = () => {
+  const mes = parseInt(
+    prompt(
+      "Introduce el número del mes que nos encontramos actualmente para conocer la estación del año"
+    )
+  );
+
+  let season;
+
+  switch (mes) {
+    case 12:
+    case 1:
+    case 2:
+      season = "Es invierno";
+      break;
+    case 3:
+    case 4:
+    case 5:
+      season = "Es primavera";
+      break;
+    case 6:
+    case 7:
+    case 8:
+      season = "Es verano";
+      break;
+    case 9:
+    case 10:
+    case 11:
+      season = "Es otoño";
+      break;
+    default:
+      season = "Por favor escribe un mes de año del 1 al 12";
+  }
+
+  alert(season);
+};
+
+seasonsOfTheYearSwitch();
