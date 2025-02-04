@@ -52,11 +52,45 @@ getElementsByQuerySelectorTypes();
 
 const getElementBySelector = () => {
   const listItems = document.querySelectorAll(".text-start li ");
+  console.log(listItems);
 };
 
+getElementBySelector();
+
 const dinoImage = () => {
-  const dino = document.querySelector(".img-fluid");
+  const dino = document.querySelector("img");
   console.log(dino);
+  return dino;
 };
 
 dinoImage();
+
+const changeImage = () => {
+  const refImage = dinoImage();
+  refImage.src = "./public/images/dog.jpg";
+  refImage.alt = "Perrito";
+};
+changeImage();
+
+const imagenPrincipal = dinoImage();
+
+imagenPrincipal.addEventListener("click", () => {
+  changeImage();
+});
+
+const buttonBlue = document.getElementById("btn-primary");
+const buttonGray = document.getElementById("btn-secondary");
+const buttonGreen = document.getElementById("btn-success");
+
+buttonBlue.addEventListener("click", () => {
+  buttonBlue.style.display = "none";
+});
+
+buttonGray.addEventListener("click", () => {
+  buttonGray.style.visibility = "hidden";
+});
+
+buttonGreen.addEventListener("mouseover", () => {
+  buttonBlue.style.display = "block";
+  buttonGray.style.visibility = "visible";
+});
