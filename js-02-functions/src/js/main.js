@@ -260,3 +260,6 @@ console.log(numerosDeLaSuerte.sort((a, b) => a - b)); // se está realizando un 
 const numCh50 = [19, 15, 13, 18, 5];
 // 19, 15, 13, 18, 5
 console.log(numCh50.sort((a, b) => b - a));
+
+let intereses = "5.23";
+console.log(5 + intereses);
