@@ -65,16 +65,14 @@ const dinoImage = () => {
 
 dinoImage();
 
-const changeImage = () => {
-  const refImage = dinoImage();
-  refImage.src = "./public/images/dog.jpg";
-  refImage.alt = "Perrito";
-};
-changeImage();
-
 const imagenPrincipal = dinoImage();
 
 imagenPrincipal.addEventListener("click", () => {
+  const changeImage = () => {
+    const refImage = dinoImage();
+    refImage.src = "./public/images/dog.jpg";
+    refImage.alt = "Perrito";
+  };
   changeImage();
 });
 

@@ -1,7 +1,6 @@
-const insertHeader = () => {
+function insertHeader() {
   const header = document.getElementById("header");
-  header.innerHTML = `
-  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+  header.innerHTML = `<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
       <div class="container">
         <a class="navbar-brand" href="#">JavaScript Course</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -11,7 +10,7 @@ const insertHeader = () => {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="/index.html">Principal</a>
+              <a class="nav-link active" href="/index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Acerca de nosotros</a>
@@ -21,6 +20,7 @@ const insertHeader = () => {
             </li>
         </div>
       </div>
-    </nav>
-  `;
-};
+    </nav>`;
+}
+
+insertHeader();
