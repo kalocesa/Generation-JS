@@ -13,5 +13,5 @@ const getUsers = (url) => {
     .finally(() => console.log("He terminado"));
 };
 
-getUsers("https://reqres.in/api/users?delay=5");
+getUsers("https://reqres.in/api/users?delay=5"); //pagina 1 con retardo de 5seg, recordar que va users, delay y después la pagina
 getUsers("https://reqres.in/api/users?page=2");
