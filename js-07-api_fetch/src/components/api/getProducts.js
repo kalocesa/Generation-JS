@@ -29,14 +29,16 @@ const getProducts = (url) => {
   */
 
   fetch(url)
-    .then((res) => {
-      console.log(res);
-      res
-        .json() // convierte de JSON a Objeto de js
-        .then((productos) => console.log(productos))
-        .catch((error) => console.log(error));
-    })
+    .then((res) => res.json())
+    .then((productos) => console.log(productos))
     .catch((error) => console.log(error))
     .finally(() => console.log("He terminado"));
 };
 getProducts("https://fakestoreapi.com/products");
+
+/*
+let filePath = window.location.pathname;
+filePath;  sale la liga completa
+let pathArray = filePath.split("/");
+let pageName = pathArray[pathArray.length - 1];
+*/

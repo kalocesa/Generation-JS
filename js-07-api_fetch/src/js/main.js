@@ -18,7 +18,6 @@ localStorage.setItem(
 );
 let datosGato = localStorage.getItem("miGato");
 let objetoGato = JSON.parse(datosGato);
-console.log(objetoGato.name);
 
 /*
   Programación síncrona.
@@ -61,6 +60,7 @@ const tercerPaso = () => {
      setTimeout( ()=>{}  , tiempo_ms );
 */
 
+/*
 const saludo = (nombre) =>
   console.log(`Hola ${nombre}, Se te antoja un elote?`);
 const usoDeSetTimeOut = (nombrePersona, titulo) => {
@@ -69,3 +69,4 @@ const usoDeSetTimeOut = (nombrePersona, titulo) => {
 console.log("01-Inicio de mi secuencia");
 usoDeSetTimeOut("Patricio Estrella", "Dr.");
 console.log("03-Fin de mi secuencia");
+*/
