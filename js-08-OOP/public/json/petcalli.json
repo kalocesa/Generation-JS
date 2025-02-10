@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Collar de Perro Reflectante",
+    "price": 12.99,
+    "description": "Collar de perro ajustable y reflectante para mayor seguridad en paseos nocturnos.",
+    "category": "accesorios",
+    "species": "perro",
+    "brand": "PetSafe",
+    "image": "ruta/a/la/imagen1.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 2800
+    }
+  },
+  {
+    "id": 2,
+    "title": "Juguete Interactivo para Gatos",
+    "price": 18.99,
+    "description": "Juguete interactivo con plumas y campanillas para mantener entretenidos a los gatos.",
+    "category": "juguetes",
+    "species": "gato",
+    "brand": "Catnip",
+    "image": "ruta/a/la/imagen2.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 2800
+    }
+  },
+  {
+    "id": 3,
+    "title": "Comida Premium para Perros",
+    "price": 45.99,
+    "description": "Comida balanceada y nutritiva para perros de todas las edades.",
+    "category": "comida",
+    "species": "perro",
+    "brand": "Royal Canin",
+    "image": "ruta/a/la/imagen3.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 2800
+    }
+  },
+  {
+    "id": 4,
+    "title": "Transportadora de Mascotas",
+    "price": 34.99,
+    "description": "Transportadora resistente y cómoda para viajar con tu mascota.",
+    "category": "viaje",
+    "species": "tortuga",
+    "brand": "Petmate",
+    "image": "ruta/a/la/imagen4.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 2800
+    }
+  },
+  {
+    "id": 5,
+    "title": "Correa Extensible",
+    "price": 22.99,
+    "description": "Correa extensible de 5 metros para mayor libertad de movimiento durante los paseos.",
+    "category": "accesorios",
+    "species": "conejo",
+    "brand": "Flexi",
+    "image": "ruta/a/la/imagen5.jpg",
+    "rating": {
+      "rate": 4.8,
+      "count": 2800
+    }
+  }
+]
