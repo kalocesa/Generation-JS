@@ -45,6 +45,11 @@ class Product {
   printPrice() {
     return `${this.#name} cuesta $${this.#price} MxN`;
   }
+
+  card() {
+    return `<h2 class="display-1">${this.name}</h2>
+    <p>Llévatelo por ${this.price}</p>`;
+  }
 }
 
 export { Product };

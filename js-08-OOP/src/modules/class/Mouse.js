@@ -23,7 +23,14 @@ class Mouse extends Product {
   }
 
   get dpi() {
-    return this.#dpi;
+    return `${this.#dpi} dpis`;
+  }
+
+  //sobreescritura de métodos | polimorfismo
+  card() {
+    return `<h2 class="display-2">${this.name}</h2>
+    <h3 class="display-3>${this.dpi}</h3>
+    <p>Llévatelo por ${this.price}</p>`;
   }
 }
 

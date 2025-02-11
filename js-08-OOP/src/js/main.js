@@ -55,3 +55,14 @@ console.log(mouseLogi.printPrice());
 
 const mouseMac = new Mouse("Mouse Mac", 1400, "Mac", "3000");
 console.log(mouseMac.printPrice());
+
+// generando un array de Mouse
+const mice = [mouseLogi, mouseMac, new Mouse("m3", 3, "N/A", 1000)];
+
+const mouseCards = mice.map((mouse, index) => `${index + 1}. ${mouse.card()}`);
+
+const mouseID = document.getElementById("mouse");
+
+mouseID.innerHTML = mouseCards.join("<br>");
+
+console.log(mouseCards);
