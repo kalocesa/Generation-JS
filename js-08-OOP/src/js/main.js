@@ -43,6 +43,7 @@ console.log(mouseGamerPixArt.compatibilidad?.length);
 console.log(amdRadeonRx.imprimirPrecioMxN());
 console.log(amdRadeonRx.imprimirPrecioDolares());
 
-const mouseLogi = new Product();
-const teclado = new Product();
-const monitor = new Product();
+const mouseLogi = new Product("mouse");
+const teclado = new Product("teclado");
+const monitor = new Product("monitor");
+const bateria = new Product();
