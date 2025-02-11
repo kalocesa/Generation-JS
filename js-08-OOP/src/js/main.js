@@ -5,6 +5,7 @@ import {
   mouseGamerPixArt,
 } from "../modules/class/amd-radion-rx.js";
 import { Product } from "../modules/class/Product.js";
+import { Mouse } from "../modules/class/Mouse.js";
 
 insertMainHeader();
 insertMainFooter();
@@ -43,7 +44,14 @@ console.log(mouseGamerPixArt.compatibilidad?.length);
 console.log(amdRadeonRx.imprimirPrecioMxN());
 console.log(amdRadeonRx.imprimirPrecioDolares());
 
-const mouseLogi = new Product("mouse");
+const mouseLogi = new Product("mouse", 800, "logiTech");
 const teclado = new Product("teclado");
 const monitor = new Product("monitor");
 const bateria = new Product();
+
+console.table(mouseLogi);
+
+console.log(mouseLogi.printPrice());
+
+const mouseMac = new Mouse("Mouse Mac", 1400, "Mac", "3000");
+console.log(mouseMac.printPrice());
