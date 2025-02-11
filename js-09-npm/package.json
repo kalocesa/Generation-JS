@@ -1,0 +1,17 @@
+{
+  "name": "js-09-npm",
+  "version": "0.0.1",
+  "description": "Sesión correspondiente a JS-09",
+  "main": "/src/js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "ch50",
+    "generation",
+    "axios"
+  ],
+  "author": "Kati Sandoval",
+  "license": "ISC"
+}
