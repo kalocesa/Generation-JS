@@ -1,7 +1,7 @@
+import * as bootstrap from "bootstrap";
 
-
-const welcome = ()=>{
-    return `
+const welcome = () => {
+  return `
     
         <section class="row align-items-center justify-content-center" id="main-content">
             <!-- logo -->
@@ -44,6 +44,6 @@ const welcome = ()=>{
         </section>
   
     `;
-}
+};
 
-export {welcome};
+export { welcome };

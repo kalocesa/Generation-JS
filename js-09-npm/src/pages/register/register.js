@@ -1,13 +1,13 @@
 import "/src/css/styles.scss";
-import "./register.css"
+import "./register.css";
 
 import { insertMainHeader } from "/src/modules/header/header";
 import { insertMainFooter } from "/src/modules/footer/footer";
 import { handlerRegister } from "./handlerRegister";
+import * as bootstrap from "bootstrap";
 
-window.addEventListener( "load", () => {
-    
-    document.getElementById("app").innerHTML = `
+window.addEventListener("load", () => {
+  document.getElementById("app").innerHTML = `
     ${insertMainHeader()} 
     <main id="app" class="container my-4">
         <div class="row justify-content-center">
@@ -84,8 +84,7 @@ window.addEventListener( "load", () => {
         </div>
     </main>
     ${insertMainFooter()}
-`
+`;
 
-    handlerRegister( document.getElementById("contactForm") );
+  handlerRegister(document.getElementById("contactForm"));
 });
-

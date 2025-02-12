@@ -1,11 +1,12 @@
 import { pages } from "./pages.js";
 import { getCurrentHtmlPage } from "./getCurrentHtmlPage.js";
 import { createListItems } from "./createListItems.js";
+import * as bootstrap from "bootstrap";
 
-const navbar = ()=>{
-    const currentHTML = getCurrentHtmlPage();
-    const menuOptions = createListItems( pages, currentHTML );
- return `   
+const navbar = () => {
+  const currentHTML = getCurrentHtmlPage();
+  const menuOptions = createListItems(pages, currentHTML);
+  return `   
         <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
             <div class="container">
                 <a class="navbar-brand" href="/index.html">JavaScript Course</a>
@@ -20,6 +21,5 @@ const navbar = ()=>{
             </div>
         </nav>     
  `;
-
-}
+};
 export { navbar };
