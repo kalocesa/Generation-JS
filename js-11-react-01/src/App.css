@@ -4,3 +4,33 @@
   padding: 2rem;
   text-align: center;
 }
+
+.lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item {
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+.section {
+  font-size: 45px;
+}
+
+.div {
+  font-weight: 600;
+}
+
+.p {
+  color: aqua;
+  margin: 30px auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
