@@ -88,3 +88,11 @@ window.addEventListener("load", () => {
 
   handlerRegister(document.getElementById("contactForm"));
 });
+
+const palindromo = (nombre) => {
+  const palindromoLower = nombre.toLowerCase();
+  const palindromoLista = palindromoLower.split("").reverse().join();
+  return palindromoLista;
+};
+
+console.log(palindromo("Hola kati"));

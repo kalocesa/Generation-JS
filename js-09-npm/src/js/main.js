@@ -4,7 +4,6 @@ import { insertMainHeader } from "/src/modules/header/header";
 import { insertMainFooter } from "/src/modules/footer/footer";
 import { welcome } from "../pages/welcome/welcome";
 import * as bootstrap from "bootstrap";
-npm;
 
 /**
  * El método onload de window en JavaScript se utiliza para ejecutar
