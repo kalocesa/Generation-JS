@@ -8,7 +8,7 @@ function App() {
     <>
       <Navbar />
       <Main />
-      <Footer />
+      <Footer year="2025" cohorte={50} />
     </>
   );
 }
