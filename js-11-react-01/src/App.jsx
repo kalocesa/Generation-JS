@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <Main />
-      <Footer year="2025" cohorte={50} />
+      <Main valentin={false} />
+      <Footer year="2025" cohorte={50} inLove={true} valentin={false} />
     </>
   );
 }

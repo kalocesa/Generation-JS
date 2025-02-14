@@ -1,4 +1,13 @@
-export const Main = (props) => {
+const si = {
+  color: "red",
+  fontFamily: "Arial",
+};
+
+const no = {
+  color: "gray",
+};
+
+export const Main = ({ valentin }) => {
   const section = "Hola soy un section";
   const div = "Hola soy un div, úsame pero no mucho";
   const p =
@@ -7,8 +16,8 @@ export const Main = (props) => {
     <>
       <section className="section">{section}</section>
       <div className="div">{div}</div>
-      <img src={props.src} alt={props.alt} />
       <p className="p">{p}</p>
+      <p style={valentin ? si : no}>¿Quieres ser mi Valentin ❤️?</p>
     </>
   );
 };
