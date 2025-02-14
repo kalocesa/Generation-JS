@@ -41,3 +41,7 @@
   display: flex;
   justify-content: space-around;
 }
+
+.contenedor_conteo {
+  margin: 50px auto;
+}

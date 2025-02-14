@@ -1,4 +1,3 @@
-import { useState } from "react";
 /**
  *
  *  Un componente actualiza si interfaz cuando:
@@ -7,8 +6,18 @@ import { useState } from "react";
  *
  *  Para cambiar el estado del componente se usa  el hook useState.
  *
+ *  Los Hooks son funciones especiales que permiten usar el estado y
+ *  otras características de React en componentes funcionales. Los más usados son:
+ *
+ *  useState → Manejo de estado local.
+ *  useEffect → Efectos secundarios.
+ *  useContext → Contexto global.
+ *  useRef → Referencias a elementos o valores persistentes.
+ *  useMemo / useCallback → Optimización de rendimiento.
+ *
  */
 
+import { useState } from "react";
 export const Counter = () => {
   /*
    useState
@@ -35,7 +44,7 @@ Renderización  useState()   count    setCount()
   };
 
   return (
-    <div>
+    <div className="contenedor_conteo">
       <h2>¿Me ama?</h2>
       <h3>{count}</h3>
       <div className="contenedor">
