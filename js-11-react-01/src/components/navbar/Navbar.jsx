@@ -5,6 +5,8 @@
  *   o apariencia.
  */
 
+import { Link } from "react-router-dom";
+
 export const Navbar = (props) => {
   const cohorte = 50;
   const navbarJsx = (
@@ -14,13 +16,13 @@ export const Navbar = (props) => {
       <img src={props.src} alt={props.alt} />
       <ul className="lista">
         <li className="item">
-          <a href="">Inicio</a>
+          <Link to="/">Inicio</Link>{" "}
         </li>
         <li className="item">
-          <a href="">Productos</a>
+          <Link to="/counter">Contador</Link>
         </li>
         <li className="item">
-          <a href="">Contacto</a>
+          <Link to="/acerca-de-nosotros">Acerca de nostros</Link>
         </li>
       </ul>
     </nav>
